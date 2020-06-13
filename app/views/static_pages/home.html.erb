@@ -3,5 +3,5 @@ Hi, this is the homepage for Default Skin! A boilerplate setup that contains a h
 <% unless user_signed_in? %>
   <%= link_to 'Register', register_path %> or <%= link_to 'Sign in', sign_in_path %>
 <% else %>
-  <%= link_to 'Your page', user_path(current_user) %>
+  <%= link_to 'Your page', user_path(current_user) %> or <%= link_to 'Sign out',sign_out_path %>
 <% end %>
